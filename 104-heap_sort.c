@@ -1,5 +1,20 @@
 #include "sort.h"
 
+/**
+  *swap - Function that swaps two integers
+  *@a: the first element to be swapped
+  *@b: the second element to be swapped
+  */
+
+void swap(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
 void max_heapify(int *array, size_t size, size_t start, size_t root);
 
 /**
