@@ -4,6 +4,21 @@ int lomuto_partition(int *array, size_t size, int start, int end);
 void lomuto_sort(int *array, size_t size, int start_ind, int end_ind);
 
 /**
+  *swap - Function that swaps two integers
+  *@a: the first element to be swapped
+  *@b: the second element to be swapped
+  */
+
+void swap(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+/**
  * lomuto_partition - Order a subset of an array of integers according to
  *                    the lomuto partition scheme (last element as pivot).
  * @array: The array of integers.
